@@ -36,6 +36,27 @@ header {
   text-align: center;
   margin-bottom: 30px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-wrapper {
+  margin-bottom: 12px;
+}
+
+.logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(74, 222, 128, 0.25);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.logo:hover {
+  transform: scale(1.08) rotate(-3deg);
+  box-shadow: 0 12px 30px rgba(74, 222, 128, 0.4);
 }
 
 header::after {
@@ -70,6 +91,25 @@ header p {
   font-size: 13px;
   color: var(--text-muted);
   font-weight: 400;
+}
+
+.instruction {
+  margin-top: 16px;
+  background: rgba(74, 222, 128, 0.1);
+  border: 1px solid rgba(74, 222, 128, 0.2);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.instruction p {
+  margin: 0;
+  font-size: 12px;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.instruction strong {
+  color: #fff;
 }
 
 main {
@@ -164,8 +204,26 @@ input:checked + .slider:before {
 footer {
   margin-top: 24px;
   text-align: center;
-  font-size: 12px;
-  color: var(--text-muted);
+  font-size: 13px;
   padding-top: 16px;
   border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+footer a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+footer a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px var(--primary-glow);
+}
+
+footer a span {
+  font-size: 16px;
 }
