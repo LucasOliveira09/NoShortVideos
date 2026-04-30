@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "NoShortVideos",
+  "version": "1.0.0",
+  "description": "Recupere seu foco escondendo vídeos curtos (Shorts, Reels, TikToks) sem bloquear as plataformas inteiras.",
+  "action": {
+    "default_popup": "src/popup/popup.html"
+  },
+  "background": {
+    "service_worker": "src/background/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*",
+        "*://*.instagram.com/*",
+        "*://*.tiktok.com/*"
+      ],
+      "js": ["src/content/content.js"]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "*://*.instagram.com/*",
+    "*://*.tiktok.com/*"
+  ]
+}
