@@ -55,8 +55,6 @@ if (hostname.includes("youtube.com")) {
   currentPlatform = "tiktok";
   storageKey = "hideTiktokFeeds";
 }
-
-// ID do elemento <style> que vamos injetar
 const STYLE_ID = "noshortvideos-style";
 
 // Função para injetar ou remover o CSS
@@ -86,7 +84,6 @@ function updateCSS(isEnabled) {
 // Quando o script carrega, verificamos as configurações no Storage
 if (currentPlatform) {
   chrome.storage.sync.get([storageKey], (result) => {
-    // O padrão é ativado (true) se ainda não existir configuração
     const isEnabled = result[storageKey] !== false;
     updateCSS(isEnabled);
   });
