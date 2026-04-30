@@ -12,11 +12,26 @@ Eu criei essa extensão para o Chrome com o objetivo de ajudar a gente a **recup
 - **TikTok**: Ocultar os feeds principais que sugam nosso tempo. 😂
 - **Popup UI**: Um menuzinho super fácil de usar pra você ativar e desativar a extensão quando quiser, além de configurar o que você quer ver ou não.
 
-## 🚀 Como testar (Em breve)
-*Como estou construindo o projeto agora, ele ainda está na fase inicial de configuração. Assim que a primeira versão (alpha) estiver rodando, vou colocar o passo a passo aqui de como instalar no seu navegador!*
+## 🚀 Como instalar e testar
+
+A extensão já está funcional! Como ainda não publiquei na Chrome Web Store, você pode instalar ela manualmente usando o "Modo do Desenvolvedor". É super fácil:
+
+1. Faça o clone deste repositório na sua máquina (ou baixe o `.zip`).
+2. Abra o Chrome e acesse a página de extensões digitando `chrome://extensions/` na barra de endereços.
+3. No canto superior direito, ative a chavinha **"Modo do desenvolvedor"**.
+4. Clique no botão **"Carregar sem compactação"** (ou *Load unpacked*).
+5. Selecione a pasta do projeto `NoShortVideos` que você baixou.
+6. Pronto! 🎉 O ícone do nosso lobinho focado vai aparecer na barra do seu navegador. É só clicar nele para configurar!
 
 ## 💻 Como foi feito
-Esse projeto está sendo construído com as tecnologias web clássicas (HTML, CSS e JavaScript puro) e utilizando a arquitetura do Chrome, o **Manifest V3**. É uma ótima oportunidade pra aprender como as extensões funcionam!
+Esse projeto está sendo construído com as tecnologias web clássicas (HTML, CSS e JavaScript puro) e utilizando a arquitetura mais recente do Chrome, o **Manifest V3**. É uma ótima oportunidade pra aprender como as extensões funcionam na prática!
+
+## 🤝 Como contribuir
+Você é muito bem-vindo para dar um *fork*, estudar o código e abrir um *Pull Request*! 
+Algumas ideias do que podemos melhorar no futuro:
+- Adicionar suporte a outros navegadores (Firefox, Edge).
+- Melhorar a seleção dos elementos no DOM para não quebrar caso o YouTube mude o layout.
+- Criar estatísticas mostrando quanto tempo de foco você ganhou.
 
 ## 📜 Licença
 Licença MIT - Fique à vontade pra clonar, estudar o código e contribuir!
