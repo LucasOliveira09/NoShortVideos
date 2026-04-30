@@ -1,7 +1,7 @@
 # Project State
 
 ## Current Phase
-Phase 1: Project Setup & Foundation
+Phase 2: Content Scripts (DOM Manipulation)
 
 ## Memory
 - **2026-04-30**: Project initialized based on user prompt.
