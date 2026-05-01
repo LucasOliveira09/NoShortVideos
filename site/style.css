@@ -329,6 +329,109 @@ body {
   color: var(--text-muted);
 }
 
+/* Donation Section */
+.donation {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 24px;
+}
+
+.donation-container {
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(74, 222, 128, 0.2);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3), inset 0 0 40px rgba(74, 222, 128, 0.05);
+}
+
+.donation-header {
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.donation-header h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+  color: var(--primary);
+}
+
+.donation-header p {
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+.pix-card {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 440px;
+  width: 100%;
+}
+
+.pix-icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.pix-key-container {
+  display: flex;
+  margin: 24px 0;
+  gap: 8px;
+}
+
+.pix-key-container input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  color: var(--text-main);
+  padding: 12px 16px;
+  font-family: monospace;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+}
+
+.btn-copy {
+  background: var(--primary);
+  color: #020617;
+  border: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-copy:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.btn-copy:active {
+  transform: translateY(0);
+}
+
+.donation-amounts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.amount-badge {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--glass-border);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
 /* CTA */
 .cta {
   max-width: 1200px;

@@ -17,6 +17,7 @@
       </div>
       <div class="nav-links">
         <a href="#features">Como funciona</a>
+        <a href="#donate">Apoiar Projeto</a>
         <a href="https://github.com/LucasOliveira09/NoShortVideos" target="_blank" class="btn-outline">Ver no GitHub</a>
       </div>
     </div>
@@ -91,6 +92,33 @@
     </div>
   </section>
 
+  <!-- Donation Section -->
+  <section id="donate" class="donation">
+    <div class="donation-container glass-card">
+      <div class="donation-header">
+        <h2>Apoie o Projeto ☕</h2>
+        <p>Este projeto é 100% gratuito e de código aberto. Se ele te ajudou a recuperar o seu foco e a ser mais produtivo, considere fazer uma doação via Pix de qualquer valor para apoiar o desenvolvimento!</p>
+      </div>
+      <div class="donation-content">
+        <div class="pix-card">
+          <div class="pix-icon">💠</div>
+          <h3>Doação via Pix</h3>
+          <p>Escolha o valor que desejar e envie para a chave abaixo:</p>
+          <div class="pix-key-container">
+            <input type="text" value="coloque-sua-chave-pix-aqui" id="pixKey" readonly>
+            <button onclick="copyPix()" class="btn-copy">Copiar Chave</button>
+          </div>
+          <div class="donation-amounts">
+            <span class="amount-badge">R$ 5</span>
+            <span class="amount-badge">R$ 10</span>
+            <span class="amount-badge">R$ 20</span>
+            <span class="amount-badge">❤️ Qualquer valor</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA Section -->
   <section class="cta">
     <div class="cta-content glass-card">
@@ -111,5 +139,24 @@
       <p class="license">MIT License © 2026</p>
     </div>
   </footer>
+
+  <script>
+    function copyPix() {
+      const copyText = document.getElementById("pixKey");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); /* Para dispositivos móveis */
+      navigator.clipboard.writeText(copyText.value);
+      
+      const btn = document.querySelector(".btn-copy");
+      const originalText = btn.innerText;
+      btn.innerText = "Copiado! ✅";
+      btn.style.background = "#fff";
+      
+      setTimeout(() => {
+        btn.innerText = originalText;
+        btn.style.background = "";
+      }, 2000);
+    }
+  </script>
 </body>
 </html>
