@@ -22,3 +22,10 @@ This roadmap defines the sequential phases to build the NoShortVideos extension.
 - Refine the DOM hiding logic to prevent layout shifts.
 - Finalize icons and branding.
 - Write a comprehensive GitHub README explaining how to install and contribute.
+
+## Phase 5: Donation System (QR Code & Donor Hall of Fame)
+- Implement a "Donate" tab in the popup UI.
+- Add a payment form for users to input their name and donation amount.
+- Integrate a QR code generator (PIX-compatible) for payments.
+- Display a list of recent donors and their contribution amounts.
+
